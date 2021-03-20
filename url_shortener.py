@@ -1,6 +1,6 @@
 repo = {} #repository for urls and new shorten ids
 domain = 'kratki.com' # domain of the new url after shortening
-id = 1 # new ids will be given by a counter. The number will be encoded in 62decimal code. Try starting id with big number
+id = 1 # new ids will be given by a counter. The number will be encoded in 62decimal code. 
 letters_low = [chr(char) for char in range(ord('a'),ord('z')+1)] #all letter lower
 letters_up = [chr(char) for char in range(ord('A'),ord('Z')+1)] #all letter upper
 numbers = [str(num) for num in range(10)] #all numbers
