@@ -1,9 +1,11 @@
+import string
+
 repo = {} #repository for urls and new shorten ids
 domain = 'kratki.com' # domain of the new url after shortening
 id = 1 # new ids will be given by a counter. The number will be encoded in 62decimal code. 
-letters_low = [chr(char) for char in range(ord('a'),ord('z')+1)] #all letter lower
-letters_up = [chr(char) for char in range(ord('A'),ord('Z')+1)] #all letter upper
-numbers = [str(num) for num in range(10)] #all numbers
+letters_low = string.ascii_lowercase #all letter lower
+letters_up = string.ascii_uppercase #all letter upper
+numbers = string.digits #all numbers
 alphanum = numbers+letters_low+letters_up #all alfanumeric characters
 base = len(alphanum) # base 62 for encoding
 
